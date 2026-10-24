@@ -180,9 +180,24 @@ marketing-loops ← 각 단계의 결과와 학습 → 다음 제작 가설
 
 ## 적용 프로젝트 · Soban Tales
 
-<img src="docs/assets/soban-table-concept.png" width="100%" alt="Soban Tales 설명서의 4인 식탁 미술 탐색 이미지: 청남색 나무, 금빛 문양, 네 접시와 작은 인물">
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<h3>접시 위 작은 조리 이야기</h3>
+<a href="docs/assets/soban-cooking-v26-first-frame.jpg"><img src="docs/assets/soban-cooking-v26-first-frame.jpg" width="100%" alt="조리 영상 v26 첫 프레임: 접시 주위의 작은 인물들이 분홍빛 죽을 조리하는 장면"></a>
+<p>작은 인물의 조리 동작과 음식, 따뜻한 테이블 미술을 가까이 보여주는 검토 영상.</p>
+<sub>TABLE_COOKING_v26 · 첫 프레임</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<h3>네 사람이 함께 보는 테이블</h3>
+<a href="docs/assets/soban-projection-first-frame.jpg"><img src="docs/assets/soban-projection-first-frame.jpg" width="100%" alt="투사 합성 영상 첫 프레임: 네 사람이 둘러앉은 테이블에 정원과 접시별 조리 장면이 펼쳐진 모습"></a>
+<p>접시별 조리 장면과 정원 배경을 식탁 전체에 연결한 4인 다이닝 연출 검토 영상.</p>
+<sub>projection-new-cooking-overlaid-4k · 첫 프레임</sub>
+</td>
+</tr>
+</table>
 
-<sub>사용자 제공 설명서의 기존 미술 탐색 이미지. 최종 투사·동작 승인 화면이 아니며, 이미지의 흰 죽은 최신 흑미 타락죽 외형 기준을 대신하지 않습니다.</sub>
+<sub>사용자가 제공한 두 영상의 첫 디코딩 프레임을 그대로 추출했습니다. 개발·연출 검토 이미지이며, 실제 현장 투사나 전체 공연의 최종 검증을 의미하지 않습니다.</sub>
 
 **한국 궁중 음식과 작은 사람들의 테이블 프로젝션 다이닝.** 작은 사람들이 실제 식탁 위에서 음식을 만드는 이야기가 실제 코스 서빙으로 이어지는 자체 IP입니다.
 
