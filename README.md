@@ -106,15 +106,19 @@ PRODUCT CONTEXT: product / country / goal / creative_id
 
 실사 경로에는 검토한 소스의 다운로드 보조 코드와 자막·크롭·무음 편집 렌더러가 포함됩니다. [실행·검증 안내](docs/footage-workflow.md), [서울 캠페인 예제](docs/seoul-campaign.md), [브랜치 통합 기록](docs/branch-integration.md)에서 입력과 현재 한계를 확인할 수 있습니다. 실사 전용 조건이 Higgsfield 경로 전체를 제한하지 않습니다.
 
-### GA·Meta·협업 검토 진입점
+### GA·광고 분석과 레퍼런스 조사
 
-| 새 스킬 | 역할 |
-|---|---|
-| [ga-performance-review](skills/ga-performance-review/SKILL.md) | 국가·채널·콘텐츠별 성과와 고객 반응에서 다음 제작 가설 도출 |
-| [meta-library-research](skills/meta-library-research/SKILL.md) | 공개 광고의 훅·구도·사건·편집을 실제 관찰 근거와 함께 제작 브리프로 전환 |
-| [gtm-cycle-review](skills/gtm-cycle-review/SKILL.md) | 자료 신선도·누락·제작 버전별 검토 기록을 연결하고 다음 담당 작업 정리 |
+| 필요한 작업 | 진입 스킬 | 실제로 읽는 근거 |
+|---|---|---|
+| **GA 성과 분석** | [ga-performance-review](skills/ga-performance-review/SKILL.md) | 국가·채널·콘텐츠별 유입·참여·목표 행동, 기간·분모·데이터 신선도 |
+| **광고 계정 성과 분석** | [ads](skills/ads/SKILL.md) + [ga-performance-review](skills/ga-performance-review/SKILL.md) | Google/Meta 등 실제 광고 계정의 노출·클릭·비용·전환, 검색어·입찰 키워드 |
+| **Meta 광고 라이브러리 조사** | [meta-library-research](skills/meta-library-research/SKILL.md) | 공개 광고의 훅·구도·사건·편집·메시지. 계정의 실제 ROAS와 구분 |
+| **계측·기여도·실험** | [analytics](skills/analytics/SKILL.md), [conversion-tracking](skills/conversion-tracking/SKILL.md), [attribution](skills/attribution/SKILL.md), [ab-testing](skills/ab-testing/SKILL.md) | 이벤트·UTM·전환 전달·기여 범위·실험 조건 |
+| **다음 제작과 협업 검토** | [gtm-cycle-review](skills/gtm-cycle-review/SKILL.md) | 자료 누락·신선도·제작 버전별 검토, 한 가지 제작 가설과 담당자별 인계 |
 
-[역할별 선택 목록](bundles/project-table.json) · [사용법](docs/project-table-june.md). 기록 검사기는 자료의 완결성을 확인하며, 실계정 연결·광고 효과·사람 승인·게시 권한을 대신하지 않습니다.
+**GA는 웹 반응, 광고 계정은 집행 성과, 광고 라이브러리는 표현 레퍼런스입니다.** 콘텐츠 ID로 연결하되 서로의 지표를 대신하지 않습니다. 실제 계정이 연결되지 않았다면 `미연결`, 자료가 없다면 `미측정`으로 남깁니다.
+
+[분석 스킬·도구 사용 지도](docs/analytics-and-ads.md) · [역할별 선택 목록](bundles/project-table.json) · [협업 사용법](docs/project-table-june.md). 스킬과 CLI 파일의 존재는 실계정 연결·자료 조회·광고 집행 완료를 의미하지 않습니다.
 
 ## 스킬이 연결되는 구조
 
@@ -176,9 +180,24 @@ marketing-loops ← 각 단계의 결과와 학습 → 다음 제작 가설
 
 ## 적용 프로젝트 · Soban Tales
 
-<img src="docs/assets/soban-table-concept.png" width="100%" alt="Soban Tales 설명서의 4인 식탁 미술 탐색 이미지: 청남색 나무, 금빛 문양, 네 접시와 작은 인물">
+<table>
+<tr>
+<td width="50%" align="center" valign="top">
+<h3>접시 위 작은 조리 이야기</h3>
+<a href="docs/assets/soban-cooking-v26-first-frame.jpg"><img src="docs/assets/soban-cooking-v26-first-frame.jpg" width="100%" alt="조리 영상 v26 첫 프레임: 접시 주위의 작은 인물들이 분홍빛 죽을 조리하는 장면"></a>
+<p>작은 인물의 조리 동작과 음식, 따뜻한 테이블 미술을 가까이 보여주는 검토 영상.</p>
+<sub>TABLE_COOKING_v26 · 첫 프레임</sub>
+</td>
+<td width="50%" align="center" valign="top">
+<h3>네 사람이 함께 보는 테이블</h3>
+<a href="docs/assets/soban-projection-first-frame.jpg"><img src="docs/assets/soban-projection-first-frame.jpg" width="100%" alt="투사 합성 영상 첫 프레임: 네 사람이 둘러앉은 테이블에 정원과 접시별 조리 장면이 펼쳐진 모습"></a>
+<p>접시별 조리 장면과 정원 배경을 식탁 전체에 연결한 4인 다이닝 연출 검토 영상.</p>
+<sub>projection-new-cooking-overlaid-4k · 첫 프레임</sub>
+</td>
+</tr>
+</table>
 
-<sub>사용자 제공 설명서의 기존 미술 탐색 이미지. 최종 투사·동작 승인 화면이 아니며, 이미지의 흰 죽은 최신 흑미 타락죽 외형 기준을 대신하지 않습니다.</sub>
+<sub>사용자가 제공한 두 영상의 첫 디코딩 프레임을 그대로 추출했습니다. 개발·연출 검토 이미지이며, 실제 현장 투사나 전체 공연의 최종 검증을 의미하지 않습니다.</sub>
 
 **한국 궁중 음식과 작은 사람들의 테이블 프로젝션 다이닝.** 작은 사람들이 실제 식탁 위에서 음식을 만드는 이야기가 실제 코스 서빙으로 이어지는 자체 IP입니다.
 

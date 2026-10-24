@@ -50,7 +50,7 @@
       "free-footage-sourcing",
       "footage-repurposing"
     ],
-    "status": "작업 도중 main c07cb83에 통합된 것을 확인했고, 그 main을 준 브랜치에 받아 함께 제공한다. 원격 codex/dan은 변경하지 않았다.",
+    "status": "이전 저장소의 codex/dan 작업은 현재 main에 내용으로 통합되어 있다. 저장소 재생성 전 옛 브랜치와 PR 기록은 로컬 백업에 보존했으며, 현재 원격 브랜치의 존재를 의미하지 않는다.",
     "scope": "현재 구현은 검토된 실사 스톡 편집. Higgsfield 혼합 작업은 별도 범위와 입력 확인이 필요하다."
   },
   "collaborators": [

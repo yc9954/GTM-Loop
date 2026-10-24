@@ -43,7 +43,7 @@ Current versions of all skills. Agents can compare against local versions to che
 | marketing-psychology | 2.1.0 | 2026-10-24 |
 | offers | 1.1.0 | 2026-10-24 |
 | onboarding | 2.1.0 | 2026-10-24 |
-| ads | 2.7.0 | 2026-10-24 |
+| ads | 2.7.1 | 2026-10-24 |
 | paywalls | 2.1.0 | 2026-10-24 |
 | popups | 2.1.0 | 2026-10-24 |
 | pricing | 2.2.0 | 2026-10-24 |
@@ -66,11 +66,17 @@ Current versions of all skills. Agents can compare against local versions to che
 
 ## Recent Changes
 
-### 2.16.1 (2026-10-24)
+### 2.16.2 (2026-10-24)
 
 - Set an explicit 100 MB source-package build bound for the bundled video resources; retain the default and web-package limits.
 - Add reviewed web descriptions for June’s three skills and run the GTM review tests in CI.
 - Fix the portable validation command and document the task acceptance boundary.
+
+### 2.16.1 (2026-10-24)
+
+- Audit README and loop routing for GA review, paid-ad account performance, public Meta creative research, measurement and cycle review.
+- Correct ads account-access assumption (2.7.1), current fork display/URLs, and historical branch status. Preserve upstream source credits and licenses.
+
 
 ### 2.16.0 (2026-10-24)
 
