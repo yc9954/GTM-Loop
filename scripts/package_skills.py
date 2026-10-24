@@ -110,6 +110,12 @@ def build(repo, output, target="source", skills=None, revision="HEAD", descripti
     omitted = []
     artifacts = {}
     for name in selected:
+        # Mapped-only releases explicitly omit unreviewed skills. Decide this
+        # before loading resources: a large omitted skill must not block the
+        # independently reviewed web catalog.
+        if target == "claude-web" and mapped_only and not isinstance(overrides.get(name), dict):
+            omitted.append({"skill": name, "reason": "Missing reviewed web description"})
+            continue
         prefix = f"skills/{name}/"
         resources = {}
         source_bytes = license_size
@@ -119,8 +125,6 @@ def build(repo, output, target="source", skills=None, revision="HEAD", descripti
             relative = path[len(prefix):]
             parts = PurePosixPath(relative).parts
             if any(part in EXCLUDED_PARTS for part in parts):
-                continue
-            if relative != "SKILL.md" and parts[0] not in {"references", "scripts", "assets"}:
                 continue
             if "\\" in relative or ":" in relative or any(part in {".", ".."} for part in parts):
                 raise ValueError(f"Unsafe resource path: {path}")
@@ -156,7 +160,13 @@ def build(repo, output, target="source", skills=None, revision="HEAD", descripti
                     continue
                 raise ValueError(f"Stale web description; review changed source triggers: {name}")
             resources["SKILL.md"] = (replace_description(original, short), resources["SKILL.md"][1], prefix + "SKILL.md")
-        resources["LICENSE"] = (license_data, "100644", "LICENSE")
+        # Keep a vendored skill's own license and nonstandard authored resources
+        # (e.g. shotcraft demos, templates and provenance). The repository MIT
+        # license is additional attribution, not a replacement for that license.
+        license_name = "LICENSE.marketingskills" if "LICENSE" in resources else "LICENSE"
+        if license_name in resources:
+            raise ValueError(f"Reserved repository license path: {name}/{license_name}")
+        resources[license_name] = (license_data, "100644", "LICENSE")
         uncompressed_bytes = sum(len(item[0]) for item in resources.values())
         if uncompressed_bytes > max_bytes:
             raise ValueError(f"Bundle exceeds the configured uncompressed size bound: {name}")

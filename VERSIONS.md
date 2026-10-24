@@ -70,6 +70,7 @@ Current versions of all skills. Agents can compare against local versions to che
 
 - Set an explicit 100 MB source-package build bound for the bundled video resources; retain the default and web-package limits.
 - Add reviewed web descriptions for June’s three skills and run the GTM review tests in CI.
+- Omit unmapped web skills before loading their resources; preserve vendored licenses and nonstandard authored resource directories in archives.
 - Fix the portable validation command and document the task acceptance boundary.
 
 ### 2.16.1 (2026-10-24)

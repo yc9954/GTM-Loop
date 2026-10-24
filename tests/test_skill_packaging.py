@@ -160,6 +160,32 @@ class PackagingTests(unittest.TestCase):
         self.assertEqual([item["skill"] for item in web["bundles"]], ["sample"])
         self.assertEqual([item["skill"] for item in web["omitted"]], ["other"])
 
+    def test_unmapped_large_skill_does_not_block_reviewed_web_catalog(self):
+        self.write("skills/other/SKILL.md", b"---\nname: other\ndescription: Other workflow.\n---\n# Other\n")
+        self.write("skills/other/assets/large.bin", b"x" * 10000)
+        self.commit()
+        web = packager.build(self.repo, self.output, target="claude-web", mapped_only=True, max_bytes=5000)
+        self.assertEqual([item["skill"] for item in web["bundles"]], ["sample"])
+        self.assertEqual(web["omitted"], [{"skill": "other", "reason": "Missing reviewed web description"}])
+        self.assertFalse((self.output / "other-claude-web.zip").exists())
+        with self.assertRaisesRegex(ValueError, "size bound"):
+            packager.build(self.repo, self.output, target="source", max_bytes=5000)
+
+    def test_vendored_license_and_nonstandard_resources_are_preserved(self):
+        self.write("skills/sample/LICENSE", b"Independent skill license")
+        self.write("skills/sample/NOTICE", b"Original author notice")
+        self.write("skills/sample/UPSTREAM.md", b"Pinned provenance")
+        self.write("skills/sample/demos/example.tsx", b"export const scene = 1;")
+        self.commit()
+        for target in ("source", "claude-web"):
+            result = packager.build(self.repo, self.output, target=target)
+            with zipfile.ZipFile(self.output / result["bundles"][0]["archive"]) as archive:
+                self.assertEqual(archive.read("sample/LICENSE"), b"Independent skill license")
+                self.assertEqual(archive.read("sample/NOTICE"), b"Original author notice")
+                self.assertEqual(archive.read("sample/UPSTREAM.md"), b"Pinned provenance")
+                self.assertEqual(archive.read("sample/demos/example.tsx"), b"export const scene = 1;")
+                self.assertIn("sample/LICENSE.marketingskills", archive.namelist())
+
     def test_changed_source_triggers_require_new_review(self):
         self.write("skills/sample/SKILL.md", self.skill.replace(b"trigger words", b"different triggers"))
         self.commit()

@@ -50,3 +50,5 @@ python3 scripts/package_skills.py --target source --max-uncompressed-bytes 10000
 ```
 
 June’s GA, Meta research and cycle review skills have reviewed web descriptions. Other skills without reviewed mappings remain explicitly omitted from the web manifest. No install, account connection or live-client upload is implied by a successful archive build.
+
+Vendored skill licenses, NOTICE/provenance files and nonstandard authored folders (such as demos and templates) are retained. When a skill has its own LICENSE, the repository MIT notice is added as LICENSE.marketingskills rather than replacing that license. Unmapped web skills are excluded before resource loading, so their size cannot block the reviewed subset.
