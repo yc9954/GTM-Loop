@@ -4,14 +4,14 @@ Release assets provide a download path for people using Claude without a termina
 
 ## Use a release asset in Claude
 
-1. Open the [latest release](https://github.com/coreyhaines31/marketingskills/releases/latest) and choose `<name>-claude-web.zip` for the task you need. `claude-web-manifest.json` lists any skills omitted because their short descriptions need review; a source ZIP for an omitted skill is not a replacement web upload.
+1. Open the [latest release](https://github.com/yc9954/GTM-Loop/releases/latest) and choose `<name>-claude-web.zip` for the task you need. `claude-web-manifest.json` lists any skills omitted because their short descriptions need review; a source ZIP for an omitted skill is not a replacement web upload.
 2. Review the skill's instructions and any scripts before enabling it.
 3. In Claude, open **Customize → Skills → + Create skill → Upload a skill** and select the ZIP. Your account or organization must permit skills and code execution.
 4. Enable the skill and try a task that matches its description. Check that Claude uses the intended skill and resources.
 
 The ZIP has the single-folder structure in [Claude's custom skill guide](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills). It has not been verified by uploading to a live account. Available account permissions, upload limits, and invocation behavior still need checking in the target client. A `.skill` extension is not required or claimed compatible by this builder.
 
-Installing one archive does not install other skills, local CLI tools, MCP servers, credentials, or marketing context. Related-skill and tool instructions remain dependencies. Use the existing [terminal installation options](../README.md#installation) when you need the complete library and local tooling. API skills have a separate execution environment and cannot make live external API calls; do not assume these archives grant that capability.
+Installing one archive does not install other skills, local CLI tools, MCP servers, credentials, or marketing context. Related-skill and tool instructions remain dependencies. Use the existing [terminal installation options](../README.md#시작하기) when you need the complete library and local tooling. API skills have a separate execution environment and cannot make live external API calls; do not assume these archives grant that capability.
 
 ## Two explicit targets
 
@@ -40,3 +40,15 @@ On a re-run, the workflow packages the existing tag's frozen commit and replaces
 Manifests record the source commit, archive SHA-256, original and packaged file hashes, exact description changes, and uncompressed byte counts. The default 30,000,000-byte per-bundle bound is a local build safeguard, **not a verified Claude web upload limit**. The API's documented limit is separate. Use `--max-uncompressed-bytes` to change the local bound after checking your target's requirements.
 
 Archive ordering, timestamps, and file modes are fixed for repeatable builds in the same Python/zlib environment. Executable script modes are retained. Symlinks and unsafe resource paths are rejected rather than followed. Neither building nor testing uploads a skill or runs a marketing tool.
+
+## GTM Loop source-library size
+
+The integrated video-shotcraft resources exceed the builder’s default 30 MB uncompressed per-skill bound. CI and release workflows explicitly allow up to 100,000,000 bytes for **source** archives, preserving all authored assets and their provenance. The builder default and web-target bound remain 30 MB. This is a repository build limit, not a claim about any client’s upload allowance. To reproduce the source-library check:
+
+```sh
+python3 scripts/package_skills.py --target source --max-uncompressed-bytes 100000000 --output /tmp/gtm-loop-source-zips
+```
+
+June’s GA, Meta research and cycle review skills have reviewed web descriptions. Other skills without reviewed mappings remain explicitly omitted from the web manifest. No install, account connection or live-client upload is implied by a successful archive build.
+
+Vendored skill licenses, NOTICE/provenance files and nonstandard authored folders (such as demos and templates) are retained. When a skill has its own LICENSE, the repository MIT notice is added as LICENSE.marketingskills rather than replacing that license. Unmapped web skills are excluded before resource loading, so their size cannot block the reviewed subset.

@@ -61,7 +61,7 @@ jobs:
 
       - name: Build complete source ZIPs and reviewed web ZIPs
         run: |
-          python3 scripts/package_skills.py --ref "${{ steps.ver.outputs.package_ref }}" --target source --output dist/skill-zips
+          python3 scripts/package_skills.py --ref "${{ steps.ver.outputs.package_ref }}" --target source --max-uncompressed-bytes 100000000 --output dist/skill-zips
           python3 scripts/package_skills.py --ref "${{ steps.ver.outputs.package_ref }}" --target claude-web --mapped-only --output dist/skill-zips
           python3 - <<'PY'
           import json, os
