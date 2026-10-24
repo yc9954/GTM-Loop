@@ -50,5 +50,7 @@ video-direction으로 콘티·구도·시선·전환을, video-shotcraft로 적�
 ## 연결 자료
 
 - [제품 맥락](../.agents/product-marketing.md)
+- [GA·광고 분석 지도](analytics-and-ads.md)
+- [ga-performance-review](../skills/ga-performance-review/SKILL.md) · [ads](../skills/ads/SKILL.md) · [meta-library-research](../skills/meta-library-research/SKILL.md) · [gtm-cycle-review](../skills/gtm-cycle-review/SKILL.md)
 - [analytics](../skills/analytics/SKILL.md) · [ad-creative](../skills/ad-creative/SKILL.md) · [marketing-loops](../skills/marketing-loops/SKILL.md)
 - [video](../skills/video/SKILL.md) · [video-direction](../skills/video-direction/SKILL.md) · [video-shotcraft](../skills/video-shotcraft/SKILL.md)

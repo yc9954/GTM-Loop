@@ -1,6 +1,6 @@
 # Soban Tales 특화 안내
 
-사용자 설명서에 근거해 marketingskills 전체 56개 스킬을 Soban Tales 테이블 프로젝션 다이닝에 맞췄다. 기존 일반 지식과 외부 라이선스는 유지했다.
+현재 전체는 59개 스킬이다. 사용자 설명서에 근거한 기존 56개와, 작업 시 최신 제품 맥락을 읽는 GA·Meta·협업 검토 3개로 구성한다. 기존 일반 지식과 외부 라이선스는 유지했다.
 
 - 공통 제품 기준: [product-marketing.md](../../.agents/product-marketing.md)
 - 스킬별 역할 56개: [skill-profiles.json](skill-profiles.json)
@@ -29,3 +29,5 @@ video는 투사/광고/검토본을 구분한다. video-direction은 구도·동
 ## GA·Meta·협업 검토 확장
 
 기존 제품 기준 스냅샷을 가진 56개에 최신 제품 맥락을 작업 시 읽는 3개 스킬을 추가해 총 59개다. [역할별 사용법](../project-table-june.md)과 [통합 기록](../branch-integration.md)을 참고한다.
+
+[GA·광고 분석 사용 지도](../analytics-and-ads.md)에서 계정 성과·공개 레퍼런스·계측 스킬의 차이를 확인한다.

@@ -1,18 +1,18 @@
 {
   "name": "marketingskills",
   "owner": {
-    "name": "Corey Haines",
-    "url": "https://corey.co"
+    "name": "yc9954",
+    "url": "https://github.com/yc9954"
   },
   "metadata": {
-    "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, and growth",
-    "version": "2.16.0",
-    "repository": "https://github.com/coreyhaines31/marketingskills"
+    "description": "GTM Loop — 59 Soban Tales skills for GA and ad performance analysis, Meta creative research, free-source curation, video production and evidence review.",
+    "version": "2.16.1",
+    "repository": "https://github.com/yc9954/GTM-Loop"
   },
   "plugins": [
     {
       "name": "marketing-skills",
-      "description": "59 project marketing skills including Soban Tales context, June GA and Meta research, team review cycles, video direction, licensed footage sourcing and editing, plus the original marketing library.",
+      "description": "GTM Loop — 59 Soban Tales skills for GA and ad performance analysis, Meta creative research, free-source curation, video production and evidence review.",
       "source": "./"
     }
   ]

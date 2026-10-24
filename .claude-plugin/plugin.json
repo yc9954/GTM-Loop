@@ -1,12 +1,12 @@
 {
   "name": "marketing-skills",
-  "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, ad creative, and growth",
-  "version": "2.16.0",
+  "description": "GTM Loop — 59 Soban Tales skills for GA and ad performance analysis, Meta creative research, free-source curation, video production and evidence review.",
+  "version": "2.16.1",
   "author": {
-    "name": "Corey Haines"
+    "name": "yc9954"
   },
-  "homepage": "https://github.com/coreyhaines31/marketingskills",
-  "repository": "https://github.com/coreyhaines31/marketingskills",
+  "homepage": "https://github.com/yc9954/GTM-Loop",
+  "repository": "https://github.com/yc9954/GTM-Loop",
   "license": "MIT",
   "skills": "./skills"
 }
