@@ -66,6 +66,12 @@ Current versions of all skills. Agents can compare against local versions to che
 
 ## Recent Changes
 
+### 2.16.1 (2026-10-24)
+
+- Set an explicit 100 MB source-package build bound for the bundled video resources; retain the default and web-package limits.
+- Add reviewed web descriptions for June’s three skills and run the GTM review tests in CI.
+- Fix the portable validation command and document the task acceptance boundary.
+
 ### 2.16.0 (2026-10-24)
 
 - Add June’s evidence-based GA review and public Meta creative research skills.

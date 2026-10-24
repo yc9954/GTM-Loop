@@ -42,9 +42,11 @@
 ```sh
 python3 skills/gtm-cycle-review/scripts/review_cycle.py skills/gtm-cycle-review/assets/cycle.example.json --now 2026-10-24T09:00:00+09:00
 python3 -m unittest discover -s tests -p 'test_gtm_cycle.py'
-node scripts/check-versions.mjs --base gtm-loop/main
+node scripts/check-versions.mjs --base origin/main
 ```
 
 첫 실사용에는 사이트·GA 속성·목표 행동·광고 플랫폼·접근 경로/내보내기 자료와 고객 반응의 보관 위치가 필요하다. 계정 ID·원자료·고객 인용 원문·비공개 제작 기록은 공개 저장소 밖에 둔다. 실제 읽기와 사람 검토 전에는 운영 검증 완료라고 보고하지 않는다.
 
 main 통합 시에는 11개 회귀 시나리오를 다시 실행했다. 실제 계정·자료·영상 검증은 추가 수행하지 않았다. 최신 통합 결과는 [통합 기록](branch-integration.md)에 남긴다.
+
+마무리 점검: [원래 임무별 완료 기준과 남은 운영 입력](june-closeout.md).

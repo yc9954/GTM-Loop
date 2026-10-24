@@ -27,5 +27,5 @@ jobs:
         run: python3 -m unittest discover -s tests -p test_skill_packaging.py -v
       - name: Build the checked-out library without uploading
         run: |
-          python3 scripts/package_skills.py --target source --output "$RUNNER_TEMP/skill-zips"
+          python3 scripts/package_skills.py --target source --max-uncompressed-bytes 100000000 --output "$RUNNER_TEMP/skill-zips"
           python3 scripts/package_skills.py --target claude-web --mapped-only --output "$RUNNER_TEMP/skill-zips"

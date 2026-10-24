@@ -206,5 +206,17 @@
   "video": {
     "source_description_sha256": "659fa809bd3a18b34120b85bce6ea358883484a12c7fe700fe3e2f0295b97257",
     "description": "Plan and produce AI or programmatic marketing videos, avatars, explainers, product demos, templates, and reference-style edits."
+  },
+  "ga-performance-review": {
+    "source_description_sha256": "e5c318137f89640587674a4e90ff2f7c945ae766900b1c5f12dae2ba35a34fe2",
+    "description": "Review GA, search ads and customer feedback over comparable periods; turn evidence into one content experiment. Use for June’s Project Table performance reviews."
+  },
+  "meta-library-research": {
+    "source_description_sha256": "e6ced6b0e5374eb4b70e6f89f0f09e74a53131c85dca510d1815ee5b8c6fc1b7",
+    "description": "Research public Meta ads for hooks, story, framing and edits. Turn observed creative principles into Project Table shot briefs without inventing ad performance."
+  },
+  "gtm-cycle-review": {
+    "source_description_sha256": "eb288ac0f0d072341248a2504c3e940ff8f213d89f9244d820d0af02d9e5eb27",
+    "description": "Coordinate Project Table marketing evidence, production handoffs and collaborator reviews. Check data freshness and version-specific review records before the next content experiment."
   }
 }
