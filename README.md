@@ -2,8 +2,6 @@
 
 # GTM Loop
 
-<img src="docs/assets/ralph-crayfish-hero-v4.png" width="620" alt="GTM Loop의 가재 랄프: 콘텐츠 카드를 낚아 편집기로 보내고 반응을 다시 학습하는 마스코트">
-
 ### 무료 소스에서 훅을 찾고, Higgsfield로 고퀄 콘텐츠를 빠르게.
 
 **소스는 무료로. 훅은 날카롭게. 제작은 Higgsfield로.**
@@ -290,8 +288,6 @@ cd GTM-Loop
 - **Blender Foundation 및 기여자**: [Blender 물리 bake/cache 공식 문서](https://docs.blender.org/manual/en/3.6/physics/baking.html)를 캐시 가이드의 일반 원리 확인에 참고했습니다. 구체적인 메뉴·API는 실제 설치 버전에서 확인합니다.
 
 ### 프로젝트 자료와 경험 형식의 참고
-
-- **가재 랄프 대표 이미지**: 사용자와 함께 OpenAI 이미지 생성 도구로 제작한 GTM Loop 마스코트 콘셉트입니다. [이미지 원본 파일](docs/assets/ralph-crayfish-hero-v4.png). 이 이미지는 Higgsfield로 제작한 결과나 실제 Soban Tales 공연 장면이 아닙니다.
 
 - **사용자 제공 Soban Tales 프로젝트 설명서 · 2026-10-24**: 제품·캐릭터·최신 메뉴·투사·운영·현재 상태의 기준입니다. [원본 문서](docs/soban-tales/source.docx), [전문 추출](docs/soban-tales/source-extract.md), [출처·해시](docs/soban-tales/source.json)를 보존했습니다. 문서가 인용한 모든 외부 자산을 이번 작업에서 다시 검증한 것은 아닙니다.
 - **사용자 제공 `foresight-video-production (1).zip`**: 기준본 선택·국소 수정·원본 재렌더·음악 연속성·검수 분리·납품 기록 방법을 읽고 Soban Tales에 맞춰 새 가이드로 정리했습니다. FORESIGHT의 미디어·소스 코드·제품 사실은 가져오지 않았습니다. [정제·통합 내용](docs/soban-tales/foresight-integration.md)과 [출처·검토 범위](docs/soban-tales/foresight-source.json)를 확인하세요. 공개 저장소 URL은 제공받지 않아 임의로 연결하지 않습니다.
