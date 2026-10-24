@@ -216,193 +216,31 @@ GTM 루프에서는 국가·메시지·시각 표현별로 홍보 콘텐츠를 �
 
 ## 폴더 구조
 
-실제 디렉터리 이름을 기준으로 **59개 스킬 전부와 각 폴더의 리소스 종류**를 표시했습니다. 한 줄에 나열한 `references/`, `assets/` 등은 그 스킬의 실제 하위 디렉터리입니다. 데모·샷·도구·테스트의 더 깊은 디렉터리는 [전체 디렉터리 지도](docs/repository-map.md)에서 볼 수 있습니다.
-
 ```text
 GTM-Loop/
-├── README.md
-├── AGENTS.md
-├── LICENSE
-├── VERSIONS.md
-├── .agents/
-│   ├── product-marketing.md
-│   └── plugins/marketplace.json
-├── .claude-plugin/
-│   ├── plugin.json
-│   └── marketplace.json
-├── .codex-plugin/plugin.json
-├── .github/
-│   ├── scripts/
-│   └── workflows/
-├── bundles/project-table.json         # 역할별 스킬 선택 목록
-├── docs/
-│   ├── project-table-june.md           # GA·Meta·협업 검토 사용법
-│   ├── gtm-loop.md
-│   ├── repository-map.md
-│   ├── assets/                        # 랄프 대표 이미지·Soban 미술 이미지
-│   └── soban-tales/
-│       ├── README.md
-│       ├── foresight-integration.md
-│       ├── foresight-source.json
-│       ├── review-index.md
-│       ├── skill-profiles.json
-│       ├── source-extract.md
-│       ├── source.docx
-│       └── source.json
-├── skills/                            # 59 folders; every folder has SKILL.md
-│   ├── ab-testing/
-│   │   └── evals/, references/
-│   ├── ad-creative/
-│   │   └── assets/, evals/, references/
-│   ├── ads/
-│   │   └── evals/, references/
-│   ├── ai-seo/
-│   │   └── evals/, references/
-│   ├── analytics/
-│   │   └── evals/, references/
-│   ├── aso/
-│   │   └── evals/, references/
-│   ├── attribution/
-│   │   └── evals/, references/
-│   ├── churn-prevention/
-│   │   └── evals/, references/
-│   ├── co-marketing/
-│   │   └── evals/, references/
-│   ├── cold-email/
-│   │   └── evals/, references/
-│   ├── community-marketing/
-│   │   └── evals/, references/
-│   ├── competitor-profiling/
-│   │   └── evals/, references/
-│   ├── competitors/
-│   │   └── evals/, references/
-│   ├── content-strategy/
-│   │   └── evals/, references/
-│   ├── conversion-tracking/
-│   │   └── assets/, evals/, references/, scripts/
-│   ├── copy-editing/
-│   │   └── evals/, references/
-│   ├── copywriting/
-│   │   └── evals/, references/
-│   ├── cro/
-│   │   └── evals/, references/
-│   ├── customer-research/
-│   │   └── evals/, references/
-│   ├── directory-submissions/
-│   │   └── evals/, references/
-│   ├── emails/
-│   │   └── evals/, references/
-│   ├── events/
-│   │   └── evals/, references/
-│   ├── footage-repurposing/
-│   │   └── references/, scripts/
-│   ├── free-footage-sourcing/
-│   │   └── references/, scripts/
-│   ├── free-tools/
-│   │   └── evals/, references/
-│   ├── ga-performance-review/
-│   ├── gtm-cycle-review/
-│   │   └── assets/, references/, scripts/
-│   ├── image/
-│   │   └── evals/, references/
-│   ├── influencer-marketing/
-│   │   └── evals/, references/
-│   ├── launch/
-│   │   └── evals/, references/
-│   ├── lead-magnets/
-│   │   └── evals/, references/
-│   ├── link-building/
-│   │   └── evals/, references/
-│   ├── marketing-council/
-│   │   └── evals/, references/
-│   ├── marketing-ideas/
-│   │   └── evals/, references/
-│   ├── marketing-loops/
-│   │   └── evals/, references/
-│   ├── marketing-plan/
-│   │   └── evals/, references/
-│   ├── marketing-psychology/
-│   │   └── evals/, references/
-│   ├── meta-library-research/
-│   ├── offers/
-│   │   └── evals/, references/
-│   ├── onboarding/
-│   │   └── evals/, references/
-│   ├── paywalls/
-│   │   └── evals/, references/
-│   ├── popups/
-│   │   └── evals/, references/
-│   ├── pricing/
-│   │   └── evals/, references/
-│   ├── product-marketing/
-│   │   └── evals/, references/
-│   ├── programmatic-seo/
-│   │   └── evals/, references/
-│   ├── prospecting/
-│   │   └── evals/, references/
-│   ├── public-relations/
-│   │   └── evals/, references/
-│   ├── referrals/
-│   │   └── evals/, references/
-│   ├── revops/
-│   │   └── evals/, references/
-│   ├── sales-enablement/
-│   │   └── evals/, references/
-│   ├── schema/
-│   │   └── evals/, references/
-│   ├── seo-audit/
-│   │   └── evals/, references/
-│   ├── signup/
-│   │   └── evals/, references/
-│   ├── site-architecture/
-│   │   └── evals/, references/
-│   ├── sms/
-│   │   └── evals/, references/
-│   ├── social/
-│   │   └── evals/, references/
-│   ├── video/
-│   │   └── assets/, evals/, references/
-│   ├── video-direction/
-│   │   └── references/
-│   └── video-shotcraft/
-│       └── .claude-plugin/, .github/, agents/, assets/, demos/, gallery/, jianying-export/, publish/, references/, shot-polish/, template/, videos/, workbench/
-├── tools/
-│   ├── REGISTRY.md
-│   ├── SETUP.md
-│   ├── PARTNERS.md
-│   ├── aisa/
-│   │   └── evals/
-│   ├── clis/
-│   ├── composio/
-│   └── integrations/
-├── scripts/
-│   ├── sync-soban-context.py
-│   ├── check-versions.mjs
-│   ├── package_skills.py
-│   ├── sync-partners.mjs
-│   └── claude-web-descriptions.json
-└── tests/
-    ├── clis/
-    ├── fixtures/
-    ├── run-regression.sh
-    └── test_skill_packaging.py
+├── README.md                     # 핵심 루프 · 갤러리 · 사용법
+├── .agents/product-marketing.md  # Soban Tales 공통 제품 맥락
+├── bundles/                      # 역할별 스킬 선택 목록
+│
+├── skills/                       # 59개 에이전트 스킬
+│   ├── ga-performance-review/    # GA 성과 분석
+│   ├── meta-library-research/    # 광고 레퍼런스 조사
+│   ├── gtm-cycle-review/         # 근거 · 협업 · 다음 실험
+│   ├── free-footage-sourcing/    # 무료 실사 소스 수집
+│   ├── footage-repurposing/      # 실사 스톡 편집
+│   ├── video*/                   # 제작 · 구도 · 샷 레시피
+│   └── …                         # 카피 · 광고 · SEO · 성장
+│
+├── docs/                         # 루프 · 분석 안내 · 제품 근거
+│   └── assets/                   # 랄프 이미지 · 영상 첫 프레임
+├── tools/                        # GA4 · 광고 등 도구와 연동 가이드
+├── scripts/                      # 맥락 동기화 · 버전 검사 · 패키징
+└── tests/                        # 도구 · 편집 · 사이클 검증
 ```
 
-### 스킬 폴더를 읽는 법
+`video*`는 `video`, `video-direction`, `video-shotcraft`를 묶은 표기입니다. 각 스킬의 시작점은 `SKILL.md`이며, 필요에 따라 `references/`, `assets/`, `scripts/`, `evals/`가 붙습니다.
 
-```text
-skills/<skill-name>/
-├── SKILL.md       # 작업 진입점: 적용 조건과 실행 판단
-├── references/    # 필요한 때 읽는 상세 가이드
-├── assets/        # 결과물 제작에 사용하는 템플릿·소스
-├── scripts/       # 해당 스킬의 실행 보조 코드
-├── evals/         # 평가 시나리오
-└── agents/        # 지원하는 에이전트용 메타데이터
-```
-
-이 구조는 리소스 역할의 설명입니다. 모든 스킬에 선택 디렉터리 전부가 있는 것은 아니며, 위 실제 트리에 존재하는 폴더만 표시했습니다. `video-shotcraft`는 원본의 `demos/`, `template/`, `gallery/`, `workbench/` 등 추가 제작 자원도 보존합니다.
-
-Meta Ads 계정용 도구와 공개 광고 라이브러리 수집은 구분합니다. Pexels·Higgsfield·Genjutsu는 사용자가 정의한 제작 경로이며, 트리에 없는 전용 자동 연동을 구현했다고 표시하지 않습니다. 공식 도구명은 [Higgsfield Genjutsu](https://higgsfield.ai/genjutsu)입니다.
+[전체 디렉터리 지도](docs/repository-map.md) · [59개 스킬 연결도](#스킬이-연결되는-구조) · [분석 스킬 사용 지도](docs/analytics-and-ads.md)
 
 ## 시작하기
 
