@@ -1,0 +1,60 @@
+{
+  "source": "foresight-video-production (1).zip",
+  "sha256": "32ad3d5ea6eaa0b9814b2139b5d21d333e3b18aa16cbe4f649347c367c03e23c",
+  "reviewed_on": "2026-10-24",
+  "entries": [
+    {
+      "path": "foresight-video-production/SKILL.md",
+      "bytes": 7034,
+      "sha256": "32529d2ba6edc39501a91741173a3539a48c33baf7fa4d004b0dab3485bc001a"
+    },
+    {
+      "path": "foresight-video-production/agents/openai.yaml",
+      "bytes": 278,
+      "sha256": "f7dd1a3e8c897ad260ca91e6a67dec7db2717f07b285b95700b90e0ef689dc3a"
+    },
+    {
+      "path": "foresight-video-production/references/media-inventory.json",
+      "bytes": 186101,
+      "sha256": "5d8b3cf2198b1ec69856ff96e401429fb32b37b1a6005d0ffbf643d6ca8157af"
+    },
+    {
+      "path": "foresight-video-production/references/production-history.md",
+      "bytes": 9584,
+      "sha256": "4329c507c04740a0d41912c98ca2842736794e03033bfed838a6b09176a04a7b"
+    },
+    {
+      "path": "foresight-video-production/references/sampled-media.json",
+      "bytes": 8057,
+      "sha256": "7537ecdcfdbf958e77fb64708e37de1c8bbeda90cb866668c732e279b69f18f2"
+    },
+    {
+      "path": "foresight-video-production/references/source-catalog.md",
+      "bytes": 12022,
+      "sha256": "ea471edef90557bfd4f0946a634aa799de9f6cd586727f282587fe050924f514"
+    },
+    {
+      "path": "foresight-video-production/references/workflow-and-qa.md",
+      "bytes": 4882,
+      "sha256": "2cc64a7a7390b0555efd9e0c32210e0ec54881ff809b8b111d7e457feb58b7af"
+    },
+    {
+      "path": "foresight-video-production/scripts/media_check.py",
+      "bytes": 4464,
+      "sha256": "63045d8a9c453608129a8831f7dbddd4fc54a863dc33cb90f974aac91ddde054"
+    }
+  ],
+  "read_in_full": [
+    "SKILL.md",
+    "references/workflow-and-qa.md",
+    "references/production-history.md",
+    "references/source-catalog.md",
+    "scripts/media_check.py"
+  ],
+  "not_content_reviewed": [
+    "agents/openai.yaml",
+    "references/media-inventory.json",
+    "references/sampled-media.json"
+  ],
+  "scope": "Adapted production lessons only. Historical media/Blender assets not opened. No archive scripts executed. No license file supplied; original package not redistributed."
+}

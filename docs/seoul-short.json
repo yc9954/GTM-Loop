@@ -1,0 +1,81 @@
+{
+  "version": 3,
+  "size": [
+    1080,
+    1920
+  ],
+  "manifest": "docs/seoul-sources.json",
+  "audio": "silent",
+  "purpose": "Seoul mood teaser, not a food or projection demonstration",
+  "scenes": [
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-30975008.mp4",
+      "start": 23,
+      "duration": 3,
+      "title": "You came for Seoul.",
+      "caption": "A city of a thousand stories.",
+      "crop_x": 0.5
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-32531981.mp4",
+      "start": 1,
+      "duration": 4,
+      "title": "Step into its past.",
+      "caption": "From the city to the palace.",
+      "crop_x": 0.5
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-29233126.mp4",
+      "start": 1,
+      "duration": 4,
+      "title": "Imagine a royal day.",
+      "caption": "A new story is taking shape.",
+      "crop_x": 0.5
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-32531981.mp4",
+      "start": 6,
+      "duration": 4,
+      "title": "At your table.",
+      "caption": "Korean food. Stories you can see.",
+      "crop_x": 0.5
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-19847005.mp4",
+      "start": 1,
+      "duration": 7,
+      "title": "SOBAN TALES",
+      "caption": "A royal dining concept\nin development.",
+      "crop_x": 0.5
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-30975008.mp4",
+      "start": 39,
+      "duration": 8,
+      "title": "Take a seat\nin the story.",
+      "caption": "Visiting Seoul?\nWould you try this?",
+      "crop_x": 0.5
+    }
+  ],
+  "presentation": {
+    "brand": "SOBAN TALES",
+    "font": "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "bold_font": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    "safe_area": [
+      0.08,
+      0.12,
+      0.82,
+      0.84
+    ],
+    "text_y": 0.49,
+    "title_size": 56,
+    "caption_size": 28,
+    "disclosure": "CONCEPT · STOCK FOOTAGE"
+  }
+}

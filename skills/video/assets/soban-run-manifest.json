@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "run_id": null,
+  "product": "Soban Tales",
+  "purpose": null,
+  "purpose_options": [
+    "projection",
+    "promotion",
+    "production_review"
+  ],
+  "baseline": {
+    "path": null,
+    "sha256": null,
+    "version": null,
+    "selection_reason": null
+  },
+  "change_ranges": [],
+  "preserve_ranges": [],
+  "spec": {
+    "width": null,
+    "height": null,
+    "fps_numerator": null,
+    "fps_denominator": null,
+    "duration_seconds": null,
+    "start_frame": null,
+    "end_frame_inclusive": null,
+    "projection_physical_mm": [
+      1400,
+      800
+    ],
+    "projection_canvas_ratio": "7:4",
+    "audio_expectation": null
+  },
+  "tools": [],
+  "assets": [],
+  "dependencies": {
+    "blend": null,
+    "textures": [],
+    "linked_libraries": [],
+    "caches": [],
+    "compositing_source": null,
+    "audio_stems": [],
+    "cue_sheet": null
+  },
+  "cache": {
+    "simulation_start_frame": null,
+    "simulation_end_frame": null,
+    "bake_status": "pending",
+    "sequential_entry_check": "pending"
+  },
+  "outputs": [],
+  "qa": {
+    "product_and_story": {
+      "status": "pending",
+      "evidence": []
+    },
+    "space_contact_cloth": {
+      "status": "pending",
+      "evidence": []
+    },
+    "rendered_frames": {
+      "status": "pending",
+      "evidence": []
+    },
+    "technical_full_decode": {
+      "status": "pending",
+      "evidence": []
+    },
+    "normal_speed_viewing": {
+      "status": "pending",
+      "evidence": []
+    },
+    "audio_listening_sync": {
+      "status": "pending",
+      "evidence": []
+    },
+    "onsite_four_seats_service": {
+      "status": "pending",
+      "evidence": []
+    }
+  },
+  "approval": {
+    "status": "pending",
+    "reviewer": null,
+    "scope": null,
+    "evidence": []
+  },
+  "notes": [
+    "Blank template, not a completed run. Fill actual FPS and output dimensions; projection dimensions are design assumptions, not site measurements. QA statuses: pending, pass, fail, not_applicable."
+  ]
+}

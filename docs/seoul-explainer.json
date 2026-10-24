@@ -1,0 +1,127 @@
+{
+  "version": 4,
+  "size": [
+    1920,
+    1080
+  ],
+  "manifest": "docs/seoul-sources.json",
+  "audio": "silent",
+  "purpose": "70-second concept explanation using filmed stock; not a demonstration of actual projection or menu",
+  "scenes": [
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-30975008.mp4",
+      "start": 20,
+      "duration": 5,
+      "title": "Visiting Seoul?",
+      "caption": "There is a city to explore.\nAnd a different kind of dinner to imagine.",
+      "crop_x": 0.5,
+      "disclosure": "CONCEPT IN DEVELOPMENT · STOCK FOOTAGE"
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-32531981.mp4",
+      "start": 0,
+      "duration": 6,
+      "title": "From Seoul to a royal story.",
+      "caption": "Soban Tales begins with the idea\nof a day in the Korean royal court.",
+      "crop_x": 0.5,
+      "disclosure": "CONCEPT IN DEVELOPMENT · STOCK FOOTAGE"
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-29233126.mp4",
+      "start": 0,
+      "duration": 6,
+      "title": "Imagine yourself in that story.",
+      "caption": "A journey inspired by a royal day,\nreimagined for the dining table.",
+      "crop_x": 0.5,
+      "disclosure": "CONCEPT IN DEVELOPMENT · STOCK FOOTAGE"
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-17598915.mp4",
+      "start": 1,
+      "duration": 7,
+      "title": "Korean food is the starting point.",
+      "caption": "This is illustrative Korean BBQ footage.\nIt is not a Soban Tales menu or venue.",
+      "crop_x": 0.5,
+      "disclosure": "ILLUSTRATIVE FOOD STOCK · NOT OUR MENU OR VENUE"
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-30975008.mp4",
+      "start": 5,
+      "duration": 8,
+      "title": "First, watch the story unfold.",
+      "caption": "The concept: small characters and visual stories\nprojected onto the table before a course.",
+      "crop_x": 0.5,
+      "disclosure": "CONCEPT IN DEVELOPMENT · STOCK FOOTAGE"
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-32531981.mp4",
+      "start": 2,
+      "duration": 8,
+      "title": "Then, taste the next chapter.",
+      "caption": "The plan pairs each visual chapter\nwith a real Korean course served to the table.",
+      "crop_x": 0.5,
+      "disclosure": "CONCEPT IN DEVELOPMENT · STOCK FOOTAGE"
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-17598915.mp4",
+      "start": 10,
+      "duration": 7,
+      "title": "See a story. Taste Korean food.",
+      "caption": "One experience linking visual storytelling and taste.\nFood shown here is illustrative stock only.",
+      "crop_x": 0.5,
+      "disclosure": "ILLUSTRATIVE FOOD STOCK · NOT OUR MENU OR VENUE"
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-19847005.mp4",
+      "start": 1,
+      "duration": 7,
+      "title": "An idea in development.",
+      "caption": "The actual table projection and planned courses\nare not shown in this stock-footage preview.",
+      "crop_x": 0.5,
+      "disclosure": "CONCEPT IN DEVELOPMENT · STOCK FOOTAGE"
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-30975008.mp4",
+      "start": 30,
+      "duration": 8,
+      "title": "Who is it for?",
+      "caption": "Visitors to Korea who want to explore Korean food\nthrough a visual story at the dining table.",
+      "crop_x": 0.5,
+      "disclosure": "CONCEPT IN DEVELOPMENT · STOCK FOOTAGE"
+    },
+    {
+      "kind": "filmed_stock",
+      "source": "assets/source/pexels-30975008.mp4",
+      "start": 40,
+      "duration": 8,
+      "title": "Would you take a seat?",
+      "caption": "Visiting Korea right now?\nTell us if you would try this experience, and why.",
+      "crop_x": 0.5,
+      "disclosure": "CONCEPT IN DEVELOPMENT · STOCK FOOTAGE"
+    }
+  ],
+  "presentation": {
+    "brand": "SOBAN TALES",
+    "font": "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "bold_font": "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    "safe_area": [
+      0.075,
+      0.08,
+      0.925,
+      0.94
+    ],
+    "text_y": 0.58,
+    "title_size": 56,
+    "caption_size": 28,
+    "disclosure": "CONCEPT · STOCK FOOTAGE"
+  }
+}

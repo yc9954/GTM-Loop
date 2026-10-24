@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "purpose": "역할별 선택 목록. 자동 설치·계정 연결·예약 실행 설정이 아니다.",
+  "upstream": {
+    "repository": "https://github.com/coreyhaines31/marketingskills",
+    "baseline_commit": "e85f3cb",
+    "official_bundle": "marketing-skills",
+    "official_skill_count_checked_2026_10_24": 52,
+    "license": "MIT"
+  },
+  "bundles": {
+    "shared": [
+      "product-marketing",
+      "gtm-cycle-review",
+      "content-strategy",
+      "customer-research"
+    ],
+    "june": [
+      "ga-performance-review",
+      "meta-library-research",
+      "analytics",
+      "attribution",
+      "ads",
+      "ad-creative",
+      "ab-testing",
+      "competitor-profiling"
+    ],
+    "alex": [
+      "video",
+      "video-direction",
+      "video-shotcraft"
+    ],
+    "optional_when_needed": [
+      "conversion-tracking",
+      "social",
+      "copywriting",
+      "cro",
+      "seo-audit"
+    ],
+    "dan": [
+      "free-footage-sourcing",
+      "footage-repurposing"
+    ]
+  },
+  "dan_existing_branch": {
+    "repository": "https://github.com/yc9954/GTM-Loop",
+    "branch": "codex/dan",
+    "inspected_commit": "d4f7207d3f663ea852c1e497cc794002207dd132",
+    "skills": [
+      "free-footage-sourcing",
+      "footage-repurposing"
+    ],
+    "status": "작업 도중 main c07cb83에 통합된 것을 확인했고, 그 main을 준 브랜치에 받아 함께 제공한다. 원격 codex/dan은 변경하지 않았다.",
+    "scope": "현재 구현은 검토된 실사 스톡 편집. Higgsfield 혼합 작업은 별도 범위와 입력 확인이 필요하다."
+  },
+  "collaborators": [
+    "미아님",
+    "낸ㅣ님"
+  ],
+  "collaboration_contract": "../skills/gtm-cycle-review/references/operating-contract.md"
+}

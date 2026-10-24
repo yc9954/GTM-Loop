@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "cycle_id": "example-not-live",
+  "creative_id": "unassigned",
+  "creative_revision": "draft-0",
+  "objective": "실제 목표 행동을 확정한 뒤 교체한다. 실측 자료가 없는 빈 양식이다.",
+  "sources": {
+    "ga": {"owner": "준", "status": "missing", "max_age_hours": 72, "checked_at": null, "data_through": null, "period_complete": null, "evidence_uri": null},
+    "search_ads": {"owner": "준", "status": "missing", "max_age_hours": 72, "checked_at": null, "data_through": null, "period_complete": null, "evidence_uri": null},
+    "meta_library": {"owner": "준", "status": "missing", "max_age_hours": 168, "checked_at": null, "evidence_uri": null},
+    "customer_feedback": {"owner": "준 + 협업자", "status": "missing", "max_age_hours": 168, "checked_at": null, "evidence_uri": null},
+    "production": {"owner": "댄 + 알렉스", "status": "missing", "max_age_hours": 24, "checked_at": null, "evidence_uri": null}
+  },
+  "reviewers_required": ["미아", "낸ㅣ"],
+  "reviewer_policy": "상시 협업 요청을 반영한 제안. 실제 사이클의 역할·검토 범위는 사용자와 합의한다.",
+  "reviews": {},
+  "checks": {"playback": null, "product_claims": null, "rights": null, "destination": null},
+  "next_review_at": "2026-10-25T09:00:00+09:00"
+}

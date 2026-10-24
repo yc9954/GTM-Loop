@@ -1,0 +1,26 @@
+{
+  "reviewed_at": "2026-10-24",
+  "candidates": [
+    {
+      "id": "pexels-35196990",
+      "creator": "바람개비 바람개비",
+      "source_url": "https://www.pexels.com/video/vibrant-korean-hansik-meal-spread-35196990/",
+      "download_url": "https://www.pexels.com/download/video/35196990/",
+      "local_path": "assets/source/pexels-35196990.mp4",
+      "sha256": "4e743470f482feb194a0f9109d5715c388f18524e5c579b1bd6c88be8f671540",
+      "license_url": "https://www.pexels.com/license/",
+      "decision": "not_selected",
+      "usage": "review_only",
+      "inspection": "1,6,11초 프레임 확인. 한식 상차림 전경, 눈에 띄는 로고/인물 없음. 샘플 간 구도 변화가 작고 조리·서빙·프로젝션 동작을 보여주지 않음. 제안 5코스와 일치하는 식별 근거 없음. 이번 핵심 경험 장면 보강용으로 채택하지 않음.",
+      "motion_review": "샘플 프레임만 확인. 전체 연속 재생과 촬영 원천 검증은 하지 않음."
+    },
+    {
+      "id": "pexels-17598915",
+      "creator": "Huu Huynh",
+      "source_url": "https://www.pexels.com/video/a-grill-with-meat-being-cooked-on-it-17598915/",
+      "decision": "selected_for_general_food_illustration",
+      "inspection": "1,9,17초 프레임 확인: 고기 굽기, 집게와 연기. 눈에 띄는 얼굴/로고 없음. 원본 설명 Korean BBQ. 부위·메뉴명·장소 미확인.",
+      "scope": "General Korean-food illustration only. Mandatory visible notice: illustrative food stock, not our menu or venue. Do not call it galbi or royal cuisine."
+    }
+  ]
+}

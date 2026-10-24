@@ -1,0 +1,20 @@
+{
+  "brand": "Soban Tales",
+  "target": "Foreign visitors currently in Korea; English is the first test language, not verified preference",
+  "core_experience": "Watch a table-projected story, then eat the real Korean course",
+  "duration_seconds": 24,
+  "cta": "What experience do you think this is?",
+  "status": "shot-sourcing brief; not a rendered or audience-tested ad",
+  "shots": [
+    {"role":"Seoul context","duration":2,"candidate":"pexels-30975008","source_interval":[23,25],"product_fit":"establishes place only","portrait_crop":"tower retained in previous rendered samples","decision":"selected"},
+    {"role":"Story on a dining table","duration":5,"candidate":null,"source_interval":null,"product_fit":"must show actual table projection, or explicitly label a separate concept explanation; palace footage is insufficient","portrait_crop":"not reviewed","decision":"missing"},
+    {"role":"Real food preparation","duration":4,"candidate":"pexels-17598915","source_interval":[1,5],"product_fit":"general Korean BBQ illustration only; no evidence it is the proposed course","portrait_crop":"needs output-specific review; grill center likely usable, inference","decision":"conditional"},
+    {"role":"Serving and eating","duration":6,"candidate":null,"source_interval":null,"product_fit":"need hands serving and taking a bite, not only stirring","portrait_crop":"not reviewed","decision":"missing"},
+    {"role":"Core understanding question","duration":7,"candidate":null,"source_interval":null,"product_fit":"hold on relevant dining action, not repeated skyline","portrait_crop":"not reviewed","decision":"pending eating source"}
+  ],
+  "rejected_candidates": [
+    {"id":"pexels-7362011","source_url":"https://www.pexels.com/video/people-at-table-eating-with-chopsticks-7362011/","review_scope":"source page only","reason":"Description is generic Asian family meal with Chinese New Year tags; cannot establish Korean dining. Not downloaded."},
+    {"id":"pexels-5337027","source_interval":[30,50],"review_scope":"30/40/50 second frames opened","reason":"Stirring bibimbap, not a bite. Does not match proposed menu. Not selected."},
+    {"id":"pexels-32531981","review_scope":"previous source and output frame inspection","reason":"Suitable for palace context, not for the role of showing a story on a dining table."}
+  ]
+}

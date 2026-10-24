@@ -1,0 +1,99 @@
+{
+  "assets": [
+    {
+      "id": "pexels-30975008",
+      "creator": "Stephen Leonardi",
+      "source_url": "https://www.pexels.com/video/aerial-view-of-namsan-seoul-tower-at-sunset-30975008/",
+      "download_url": "https://www.pexels.com/download/video/30975008/",
+      "local_path": "assets/source/pexels-30975008.mp4",
+      "sha256": "e430b820703ba8477c8686d7b59c96cb0ed9a80e0b729b3151526b9093418a6c",
+      "license_url": "https://www.pexels.com/license/",
+      "reviewed_at": "2026-10-24",
+      "decision": "selected",
+      "usage": "production",
+      "origin": "filmed_stock",
+      "inspection": "남산타워 항공 전경. 1,25.7,50.4초 프레임 확인.",
+      "intended_use": "Seoul travel context for a concept teaser, not actual Soban Tales service footage."
+    },
+    {
+      "id": "pexels-32531981",
+      "creator": "FREE VIDEO HAPPY",
+      "source_url": "https://www.pexels.com/video/gyeongbokgung-palace-and-modern-seoul-skyline-32531981/",
+      "download_url": "https://www.pexels.com/download/video/32531981/",
+      "local_path": "assets/source/pexels-32531981.mp4",
+      "sha256": "4eabf9a6849f767fbc4e570e0c638a3855edecd2a0bd524f9b813ec06d4d0be6",
+      "license_url": "https://www.pexels.com/license/",
+      "reviewed_at": "2026-10-24",
+      "decision": "selected",
+      "usage": "production",
+      "origin": "filmed_stock",
+      "inspection": "광화문 광장 쪽에서 바라본 광화문, 주변 현대 건물. 1,5.7,10.4초 확인.",
+      "intended_use": "Seoul travel context for a concept teaser, not actual Soban Tales service footage."
+    },
+    {
+      "id": "pexels-29233126",
+      "creator": "Paul Bill",
+      "source_url": "https://www.pexels.com/video/traditional-hanbok-fashion-at-korean-palace-29233126/",
+      "download_url": "https://www.pexels.com/download/video/29233126/",
+      "local_path": "assets/source/pexels-29233126.mp4",
+      "sha256": "96ad98a02b2b5664d6549568c4f2289e4d4d6e13fb2564b7ea52c19d4c52589b",
+      "license_url": "https://www.pexels.com/license/",
+      "reviewed_at": "2026-10-24",
+      "decision": "selected",
+      "usage": "production",
+      "origin": "filmed_stock",
+      "inspection": "궁궐에서 한복 입은 방문객 뒷모습. 1,4,7초 확인. 실제 고객/보증인으로 소개 금지.",
+      "intended_use": "Seoul travel context for a concept teaser, not actual Soban Tales service footage."
+    },
+    {
+      "id": "pexels-19847005",
+      "creator": "FREE VIDEO HAPPY",
+      "source_url": "https://www.pexels.com/video/cheonggyecheon-stream-19847005/",
+      "download_url": "https://www.pexels.com/download/video/19847005/",
+      "local_path": "assets/source/pexels-19847005.mp4",
+      "sha256": "644f029b95c9ce28367c6ece20d04710a8656fe487504fade975a0ad256d7837",
+      "license_url": "https://www.pexels.com/license/",
+      "reviewed_at": "2026-10-24",
+      "decision": "selected",
+      "usage": "production",
+      "origin": "filmed_stock",
+      "inspection": "청계천 야경, 1,5,9초 확인. 원본 음원 미청취로 전부 제외.",
+      "intended_use": "Seoul travel context for a concept teaser, not actual Soban Tales service footage."
+    },
+    {
+      "id": "pexels-17598915",
+      "creator": "Huu Huynh",
+      "source_url": "https://www.pexels.com/video/a-grill-with-meat-being-cooked-on-it-17598915/",
+      "download_url": "https://www.pexels.com/download/video/17598915/",
+      "local_path": "assets/source/pexels-17598915.mp4",
+      "sha256": "a96ddf03f9385269321e06292a78ca8c0ab36c25f3379330c9b6a7db7bb02e31",
+      "license_url": "https://www.pexels.com/license/",
+      "reviewed_at": "2026-10-24",
+      "decision": "selected",
+      "usage": "production",
+      "origin": "filmed_stock",
+      "inspection": "1,9,17초 프레임 확인: 고기 굽기, 집게와 연기. 눈에 띄는 얼굴/로고 없음. 원본 설명 Korean BBQ. 부위·메뉴명·장소 미확인.",
+      "intended_use": "General Korean-food illustration only. Mandatory visible notice: illustrative food stock, not our menu or venue. Do not call it galbi or royal cuisine."
+    }
+  ],
+  "license_review": "Pexels License reviewed 2026-10-24; free licensed footage, not public domain. No endorsement claims. Reference films excluded.",
+  "provenance_limit": "Source descriptions and sampled frames checked; independent camera provenance not available.",
+  "excluded": [
+    {
+      "id": "5337024/5337027",
+      "reason": "Bibimbap is not the proposed royal menu; do not misrepresent as product."
+    },
+    {
+      "id": "4768006",
+      "reason": "Prominent alcohol logos and printed face."
+    },
+    {
+      "id": "32531993",
+      "reason": "Duplicate gate view, foreground fence."
+    },
+    {
+      "id": "37448949",
+      "reason": "Less recognizable city marker than Namsan."
+    }
+  ]
+}

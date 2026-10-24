@@ -1,0 +1,19 @@
+{
+  "name": "marketingskills",
+  "owner": {
+    "name": "Corey Haines",
+    "url": "https://corey.co"
+  },
+  "metadata": {
+    "description": "Marketing skills for AI agents — conversion optimization, copywriting, SEO, paid ads, and growth",
+    "version": "2.16.0",
+    "repository": "https://github.com/coreyhaines31/marketingskills"
+  },
+  "plugins": [
+    {
+      "name": "marketing-skills",
+      "description": "59 project marketing skills including Soban Tales context, June GA and Meta research, team review cycles, video direction, licensed footage sourcing and editing, plus the original marketing library.",
+      "source": "./"
+    }
+  ]
+}
